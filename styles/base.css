@@ -7,6 +7,10 @@
   --accent: #16a34a; /* green for light mode */
   --border: rgba(15,23,36,0.06);
   --input-border: rgba(15,23,36,0.08);
+  /* Scrollbar colors (theme-aware) */
+  --scroll-track: #f0f3f7;
+  --scroll-thumb: rgba(22,163,74,0.9);
+  --scroll-thumb-hover: rgba(22,163,74,1);
   --radius: 8px;
   --shadow-sm: 0 1px 3px rgba(12,14,20,0.06);
   --shadow-md: 0 8px 24px rgba(12,14,20,0.08);
@@ -23,6 +27,10 @@ html[data-theme='dark']{
   --accent: #f5c542; /* yellow for dark mode */
   --border: rgba(255,255,255,0.06);
   --input-border: rgba(255,255,255,0.08);
+  /* Scrollbar colors for dark mode */
+  --scroll-track: #0d1113;
+  --scroll-thumb: rgba(245,197,66,0.95);
+  --scroll-thumb-hover: rgba(245,197,66,1);
 }
 
 /* prefers-color-scheme fallback */

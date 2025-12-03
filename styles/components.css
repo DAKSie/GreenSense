@@ -88,3 +88,20 @@ hr::after{
   .signup-form{flex-direction:column;align-items:stretch}
   .header-inner{padding:12px}
 }
+
+/* Custom scrollbar styling (WebKit browsers) and Firefox fallback */
+/* Firefox */
+*{
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+}
+
+/* WebKit-based browsers */
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:var(--scroll-track);border-radius:999px}
+::-webkit-scrollbar-thumb{background:var(--scroll-thumb);border-radius:999px;border:3px solid var(--scroll-track)}
+::-webkit-scrollbar-thumb:hover{background:var(--scroll-thumb-hover)}
+
+@media (prefers-reduced-motion: reduce){
+  ::-webkit-scrollbar-thumb{transition:none}
+}
