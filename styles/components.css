@@ -52,6 +52,37 @@ input[type="email"]{padding:12px 14px;border-radius:8px;border:1px solid var(--i
 /* Testimonial */
 .testimonial{background:var(--surface);padding:20px;border-radius:10px;border:1px solid var(--border)}
 
+/* Stylish horizontal rule that matches theme */
+hr{
+  border:0;
+  height:1px;
+  background:var(--border);
+  margin:32px 0;
+  position:relative;
+}
+hr::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:140px;
+  max-width:40%;
+  height:6px;
+  background:var(--accent);
+  border-radius:999px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+@media (prefers-reduced-motion: reduce){
+  hr::after{box-shadow:none}
+}
+
+@media (max-width:479px){
+  hr{margin:20px 0}
+  hr::after{width:120px;max-width:60%}
+}
+
 /* small screens adjustments */
 @media(max-width:479px){
   .signup-form{flex-direction:column;align-items:stretch}
