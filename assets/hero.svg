@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="700" height="420" role="img" aria-label="Simple dashboard mockup">
+  <rect width="700" height="420" rx="14" fill="#f6f8fb"/>
+  <g transform="translate(32,32)">
+    <rect width="200" height="28" rx="6" fill="#fff"/>
+    <rect y="48" width="620" height="260" rx="8" fill="#fff"/>
+    <circle cx="520" cy="80" r="28" fill="#0b84ff"/>
+  </g>
+</svg>

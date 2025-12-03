@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GreenSense Smart insights for small greenhouse farmers. Reduce waste, save money, and grow profitably.">
+  <title>GreenSense Smart Insights for Small Greenhouse Farmers</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="GreenSense home">
+        <img src="assets/logo.svg" alt="GreenSense logo" width="36" height="36">
+        <span class="brand-name">GreenSense</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#visual">Visual</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+        <a class="btn btn-cta" href="#signup">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <h1 id="hero-heading">Smart Greenhouse Decisions, Without the Guesswork</h1>
+        <p class="lede">Track expenses, record sales, and monitor your greenhouse performance in one clean, simple dashboard.</p>
+        <p class="muted">A lightweight tool built for farmers who want clarity, control, and consistent growth.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#signup">Get Started</a>
+          <a class="btn btn-outline" href="#how">See How It Works</a>
+        </div>
+
+        <p class="hero-trust muted" aria-hidden="true">“GreenSense helped me understand where my budget was leaking. Now my planning is smoother, and profits are up.” Small Greenhouse Owner</p>
+      </div>
+
+      <div class="hero-visual" id="visual" role="img" aria-label="Simplified dashboard showing revenue and expenses">
+        <img src="assets/hero.svg" alt="Preview of GreenSense dashboard" width="700" height="420" loading="lazy">
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2 class="section-title">Key features</h2>
+      <div class="features-grid" role="list">
+        <article class="feature-card" role="listitem">
+          <h3>Track Everything Effortlessly</h3>
+          <p class="muted">Record seeds, fertilizers, utilities, logistics, and every sale with just a few clicks. No spreadsheets. No confusion.</p>
+        </article>
+        <article class="feature-card" role="listitem">
+          <h3>Spot Waste Before It Hurts You</h3>
+          <p class="muted">Instantly see which expenses drag profits down. Know when you're overspending before it becomes a problem.</p>
+        </article>
+        <article class="feature-card" role="listitem">
+          <h3>Clear Profit Insights</h3>
+          <p class="muted">Turn daily records into simple charts that reveal spending, revenue, and overall profit trends.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="why" class="why container">
+      <h2 class="section-title">Why GreenSense?</h2>
+      <p>You don’t need a complex system you need clarity. GreenSense helps small greenhouse farmers turn scattered costs and random sales notes into organized, actionable information.</p>
+      <ul>
+        <li>How much you’re earning</li>
+        <li>Where your money is going</li>
+        <li>What’s actually profitable</li>
+        <li>What needs to change next cycle</li>
+      </ul>
+    </section>
+
+    <section id="how" class="how container">
+      <h2 class="section-title">How it works</h2>
+      <ol class="steps" aria-label="How GreenSense works">
+        <li>
+          <strong>1. Add Your Expenses</strong>
+          <p class="muted">Seeds, supplies, utilities log them once, track them automatically.</p>
+        </li>
+        <li>
+          <strong>2. Record Your Sales</strong>
+          <p class="muted">Capture customer purchases with quantity, date, and revenue.</p>
+        </li>
+        <li>
+          <strong>3. View Your Dashboard</strong>
+          <p class="muted">See total expenses, total revenue, and net profit clearly laid out.</p>
+        </li>
+        <li>
+          <strong>4. Use Insights to Adjust</strong>
+          <p class="muted">Make smarter decisions about planting volume, pricing, and resource use.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="social-proof container">
+      <blockquote class="testimonial">
+        <p>“GreenSense helped me understand where my budget was leaking. Now my planning is smoother, and profits are up.”</p>
+        <cite>Small Greenhouse Owner</cite>
+      </blockquote>
+    </section>
+
+    <section id="signup" class="cta container">
+      <h2>Ready to try GreenSense?</h2>
+      <form id="signup-form" class="signup-form" action="#" onsubmit="return false;">
+        <label for="email" class="sr-only">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@farm.co" required>
+        <button class="btn btn-primary" type="submit">Get Started</button>
+      </form>
+    </section>
+
+    <section class="pre-footer-cta container">
+      <h2>Start Making Smarter Farming Decisions Today</h2>
+      <p class="muted">Simple to use. Easy to track. Designed for greenhouse growers.</p>
+      <a class="btn btn-primary" href="#signup">Try GreenSense</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 GreenSense. All rights reserved.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script defer src="scripts/theme.js"></script>
+  <script defer src="scripts/ui.js"></script>
+</body>
+</html>
