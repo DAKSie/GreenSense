@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
-  <rect rx="12" width="64" height="64" fill="#0b84ff" />
-  <path d="M20 40c6-8 10-14 24-14" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- logo uses accent and surface variables so it adapts to theme -->
+  <rect rx="12" width="64" height="64" fill="var(--accent)" />
+  <path d="M20 40c6-8 10-14 24-14" stroke="var(--surface)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

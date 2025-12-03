@@ -8,13 +8,16 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/components.css">
-  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="GreenSense home">
-        <img src="assets/logo.svg" alt="GreenSense logo" width="36" height="36">
+        <!-- inline SVG logo so it adapts to theme variables -->
+        <svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect rx="12" width="64" height="64" fill="var(--accent)"></rect>
+          <path d="M20 40c6-8 10-14 24-14" stroke="var(--surface)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
         <span class="brand-name">GreenSense</span>
       </a>
 
@@ -48,7 +51,15 @@
       </div>
 
       <div class="hero-visual" id="visual" role="img" aria-label="Simplified dashboard showing revenue and expenses">
-        <img src="assets/hero.svg" alt="Preview of GreenSense dashboard" width="700" height="420" loading="lazy">
+        <!-- inline SVG illustration so it follows CSS variables and theme -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="700" height="420" role="img" aria-hidden="false">
+          <rect width="700" height="420" rx="14" fill="var(--surface)"/>
+          <g transform="translate(32,32)">
+            <rect width="200" height="28" rx="6" fill="var(--bg)"/>
+            <rect y="48" width="620" height="260" rx="8" fill="var(--bg)"/>
+            <circle cx="520" cy="80" r="28" fill="var(--accent)"/>
+          </g>
+        </svg>
       </div>
     </section>
 
